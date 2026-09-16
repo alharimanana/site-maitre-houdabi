@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+collections:
+  - name: "videos"
+    label: "Vidéos et Photos"
+    folder: "content/videos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre de la vidéo/photo", name: "title", widget: "string"}
+      - {label: "Fichier Vidéo ou Photo", name: "media_file", widget: "file"}
