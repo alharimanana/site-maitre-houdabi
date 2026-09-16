@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- --- BALISES SEO POUR GOOGLE --- -->
+    <title>Maître Houdabi Dagbegnon - Marabout Guérisseur Spirituel (Retour Affectif 72h)</title>
+    <meta name="description" content="Maître Houdabi Dagbegnon, marabout et guérisseur spirituel reconnu. Retour d'affection rapide en 72h, attraction de richesse, protection contre les mauvais sorts. Travail puissant et discrétion assurée.">
+    <meta name="keywords" content="marabout, guérisseur spirituel, retour affectif, retour de l'être aimé, magie amour, attraction clientèle, désenvoûtement, maître houdabi dagbegnon, spiritualité, medium">
+    <meta name="author" content="Maître Houdabi Dagbegnon">
+    <meta property="og:title" content="Maître Houdabi Dagbegnon - Travaux Spirituels Puissants">
+    <meta property="og:description" content="Retrouvez l'amour, la chance et la prospérité. Retour affectif en 72h. Discrétion absolue.">
+    <meta property="og:image" content="image1.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Polices d'écriture luxueuses -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap">
+    <style>
+        /* --- DESIGN GLOBAL --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0a0a0a;
+            color: #cfcfcf;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+        h1, h2, h3 { 
+            font-family: 'Cinzel', serif; 
+            color: #c5a059; 
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            padding: 30px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        .logo { 
+            color: #c5a059; 
+            font-family: 'Cinzel', serif;
+            font-size: 1.4em; 
+            text-decoration: none; 
+            letter-spacing: 3px;
+        }
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav ul a { color: #fff; text-decoration: none; font-size: 0.9em; text-transform: uppercase; transition: color 0.3s; }
+        nav ul a:hover { color: #c5a059; }
+
+        /* --- HERO (Bannière du haut) --- */
+        .hero {
+            height: 85vh; 
+            min-height: 550px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 50px;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background-image: url('image1.jpg');
+            background-color: #0a0a0a;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 15%;
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60%;
+            background: linear-gradient(to top, #0a0a0a 10%, rgba(10,10,10,0.4) 60%, transparent 100%);
+            z-index: 1;
+        }
+        .hero-content { position: relative; z-index: 5; max-width: 800px; padding: 0 20px; }
+        .hero-content h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+            animation: fadeIn 2s ease;
+        }
+        .hero-content p {
+            font-size: 1.1em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeIn 2.5s ease;
+        }
+        .divider { width: 100px; height: 1px; background: #c5a059; margin: 0 auto 40px; }
+
+        /* --- BOUTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid #c5a059;
+            color: #c5a059;
+            background: transparent;
+            transition: all 0.4s ease;
+            margin: 10px;
+            backdrop-filter: blur(5px); 
+        }
+        .btn:hover {
+            background: #c5a059;
+            color: #0a0a0a;
+            box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2);
+        }
+        .btn-wa { border-color: #c5a059; color: #ffffff; background: rgba(0,0,0,0.4); }
+        .btn-wa:hover { background: #c5a059; color: #0a0a0a; }
+        .btn-share { font-size: 0.8em; padding: 10px 20px; border-color: #555; color: #888; margin-top: 30px; }
+        .btn-share:hover { background: #555; color: #fff; }
+
+        /* --- SECTIONS --- */
+        .section-padding {
+            padding: 80px 10%; 
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .section-subtitle {
+            color: #888;
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            font-style: italic;
+        }
+
+        /* --- SERVICES --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .service-item h3 { margin-bottom: 15px; font-size: 1.4em; }
+        .service-item p { font-size: 0.95em; color: #a0a0a0; }
+        .service-icon { font-size: 2em; margin-bottom: 20px; opacity: 0.8; }
+
+        /* --- RITUEL --- */
+        .rituel-section {
+            background: #111111;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            padding: 80px 5%;
+        }
+        .rituel-img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 2px;
+            filter: brightness(0.9);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            transition: transform 0.5s;
+        }
+        .rituel-img:hover { transform: scale(1.02); }
+        .rituel-text { max-width: 500px; text-align: left; }
+        .rituel-text h2 { font-size: 2em; margin-bottom: 20px; }
+        .rituel-text p { margin-bottom: 20px; color: #b0b0b0; }
+
+        /* --- GALERIE VIDEOS --- */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .video-container {
+            border: 1px solid #c5a059;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: #000;
+        }
+        .video-container video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* --- TÉMOIGNAGES --- */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .testimonial-card {
+            border: 1px solid #2a2a2a;
+            padding: 40px;
+            text-align: left;
+            background: #111;
+            position: relative;
+            transition: border-color 0.3s;
+        }
+        .testimonial-card:hover { border-color: #c5a059; }
+        .quote-mark { 
+            font-family: 'Cinzel', serif; 
+            font-size: 4em; 
+            color: #1a1a1a; 
+            position: absolute; 
+            top: 10px; 
+            right: 20px; 
+            line-height: 1; 
+        }
+        .testimonial-text { font-style: italic; color: #d1d1d1; margin-bottom: 25px; position: relative; z-index: 2; }
+        .testimonial-author { color: #c5a059; font-weight: 500; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* --- PIED DE PAGE --- */
+        footer {
+            border-top: 1px solid #222;
+            padding: 40px 5%;
+            text-align: center;
+            color: #555;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+        .btn-admin {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.8em;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .btn-admin:hover {
+            border-color: #c5a059;
+            color: #c5a059;
+        }
+
+        /* --- CHATBOT --- */
+        .chat-toggle {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #c5a059;
+            color: #0a0a0a;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8em;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(197, 160, 89, 0.6);
+            z-index: 9999;
+            transition: transform 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .chat-toggle:hover { transform: scale(1.1); }
+        
+        .chat-box {
+            position: fixed;
+            bottom: 100px;
+            right: 25px;
+            width: 350px;
+            max-width: 90vw;
+            height: 550px;
+            background: #111111;
+            border: 1px solid #c5a059;
+            border-radius: 10px;
+            display: none;
+            flex-direction: column;
+            z-index: 9998;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .chat-header {
+            background: #c5a059;
+            color: #0a0a0a;
+            padding: 15px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 1px;
+        }
+        .chat-close { cursor: pointer; font-size: 1.2em; }
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: #0a0a0a;
+        }
+        .chat-msg {
+            max-width: 85%;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            line-height: 1.4;
+            animation: fadeIn 0.5s ease;
+        }
+        .bot-msg { background: #222; color: #ddd; align-self: flex-start; border-bottom-left-radius: 2px; }
+        .user-msg { background: #c5a059; color: #0a0a0a; align-self: flex-end; border-bottom-right-radius: 2px; }
+        
+        .chat-footer {
+            background: #111111;
+            border-top: 1px solid #333;
+        }
+        .chat-options-container {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            min-height: 50px;
+            align-items: center;
+        }
+        .chat-option-btn {
+            background: transparent;
+            border: 1px solid #c5a059;
+            color: #c5a059;
+            padding: 8px 12px;
+            font-size: 0.8em;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            text-align: center;
+        }
+        .chat-option-btn:hover { background: #c5a059; color: #0a0a0a; }
+        
+        .chat-input-container {
+            display: flex;
+            border-top: 1px solid #333;
+            padding: 10px;
+            background: #0a0a0a;
+        }
+        #chatInput {
+            flex: 1;
+            background: #111;
+            border: 1px solid #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            outline: none;
+        }
+        #chatInput:focus { border-color: #c5a059; }
+        #chatSendBtn {
+            background: #c5a059;
+            color: #0a0a0a;
+            border: none;
+            padding: 0 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        #chatSendBtn:hover { background: #d4af37; }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(197, 160, 89, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); }
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        @media (max-width: 768px) {
+            .hero { height: 60vh; background-position: center top; }
+            .hero-content h1 { font-size: 2em; }
+            .hero-content p { font-size: 0.8em; letter-spacing: 2px; }
+            nav ul { display: none; }
+            .chat-box { width: 90vw; height: 70vh; bottom: 90px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <nav>
+            <a href="#" class="logo">HOUDABI DAGBEGNON</a>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#preuves">Savoir-faire</a></li>
+                <li><a href="#videos">Vidéos</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>MAÎTRE HOUDABI DAGBEGNON</h1>
+            <div class="divider"></div>
+            <p>Travaux Spirituels Puissants & Discrétion Assurée</p>
+            <a href="https://wa.me/22898761895" class="btn btn-wa" target="_blank">Consultation WhatsApp</a>
+            <a href="tel:+22898761895" class="btn">Appel Téléphonique</a>
+            <a href="https://wa.me/?text=Je%20recommande%20le%20Maître%20Houdabi%20Dagbegnon%20pour%20les%20problèmes%20spirituels.%20Voir%20son%20site%20:" class="btn btn-share" target="_blank">📢 Partager ce site</a>
+        </div>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section class="section-padding">
+        <h2 class="section-title">Un Savoir-Ancestral au Service de Votre Bonheur</h2>
+        <p class="section-subtitle">
+            Bienvenue dans le cabinet de Maître Houdabi Dagbegnon. Vous traversez une période difficile ? L'amour vous fuit, la chance vous tourne le dos, ou vos affaires stagnent ? Héritier d'un puissant savoir occulte, j'interviens rapidement pour débloquer toutes les situations de la vie avec rigueur et discrétion absolue.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section-padding" id="services" style="background: #0f0f0f;">
+        <h2 class="section-title">Mes Domaines d'Expertise</h2>
+        <div class="divider" style="margin-bottom: 50px;"></div>
+        
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">❤️</div>
+                <h3>Retour Affectif (72H)</h3>
+                <p>Récupérez l'être aimé en un temps record. Rituels de haute magie pour faire revenir votre ex, raviver la passion et assurer la fidélité absolue.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">💰</div>
+                <h3>Attraction de Richesse</h3>
+                <p>Attraction de clientèle, réussite professionnelle. J'ouvre vos chemins de la prospérité pour stopper définitivement la misère financière.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🛡️</div>
+                <h3>Protection & Désenvoûtement</h3>
+                <p>Vous sentez un blocage ? Je nettoie votre aura et crée une barrière spirituelle invincible contre vos ennemis invisibles et la malchance.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">⚖️</div>
+                <h3>Harmonie & Couple</h3>
+                <p>Disputes, infidélité, manque de communication. Je restaure la paix, la complicité et l'harmonie au sein de votre couple et de votre famille.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREUVE / RITUEL -->
+    <section class="rituel-section" id="preuves">
+        <img src="image2.jpg" alt="Travaux Spirituels et Rituels du Maître Houdabi Dagbegnon" class="rituel-img">
+        <div class="rituel-text">
+            <h2>Des Travaux Authentiques</h2>
+            <div class="divider" style="margin-left: 0; margin-bottom: 20px;"></div>
+            <p>La spiritualité n'est pas un jeu. Chaque rituel est préparé avec des éléments naturels purs selon des traditions ancestrales strictes.</p>
+            <p>Je ne laisse rien au hasard. Que ce soit pour un retour d'affection ou pour attirer la chance, mes travaux sont réels, puissants et sans danger pour vous ni pour vos proches.</p>
+        </div>
+    </section>
+
+    <!-- SECTION GALERIE VIDEOS -->
+    <section class="section-padding" id="videos" style="background: #0f0f0f;">
+        <h2 class="section-title">Preuves en Image : Les Travaux du Maître</h2>
+        <div class="divider" style="margin-bottom: 50px;"></div>
+        <p class="section-subtitle">
+            La spiritualité requiert des rituels précis et authentiques. Découvrez un aperçu des travaux et rituels réalisés par Maître Houdabi Dagbegnon pour aider les âmes en détresse.
+        </p>
+        
+        <div class="video-grid">
+            <!-- Vidéo 1 -->
+            <div class="video-container">
+                <video controls preload="none">
+                    <source src="video1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+
+            <!-- Vidéo 2 -->
+            <div class="video-container">
+                <video controls preload="none">
+                    <source src="video2.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+
+            <!-- Vidéo 3 -->
+            <div class="video-container">
+                <video controls preload="none">
+                    <source src="video3.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+
+            <!-- Vidéo 4 -->
+            <div class="video-container">
+                <video controls preload="none">
+                    <source src="video4.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section class="section-padding" id="temoignages" style="background: #111111;">
+        <h2 class="section-title">Preuves & Témoignages</h2>
+        <div class="divider" style="margin-bottom: 50px;"></div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-mark">”</div>
+                <p class="testimonial-text">"Mon mari avait quitté le domicile et refusait de me parler. En exactement 3 jours, après l'intervention du Maître, il m'a appelé pour s'excuser. Il est rentré à la maison. Merci infiniment."</p>
+                <p class="testimonial-author">— Aminata, Lomé</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-mark">”</div>
+                <p class="testimonial-text">"Mon commerce était vide, j'étais ruiné. Après le rituel d'attraction réalisé par Maître Houdabi Dagbegnon, ma boutique est redevenue la plus fréquentée du quartier. Un vrai miracle."</p>
+                <p class="testimonial-author">— Koffi, Abidjan</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-mark">”</div>
+                <p class="testimonial-text">"Je perdais tous mes emplois et faisais des cauchemars. Le Maître a détecté un envoûtement. Après le nettoyage, ma vie a changé. J'ai retrouvé le sommeil et un travail stable."</p>
+                <p class="testimonial-author">— Sarah, Paris</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FINAL -->
+    <section class="section-padding contact-section" id="contact">
+        <h2 class="section-title">Ne Souffrez Plus en Silence</h2>
+        <div class="divider" style="margin-bottom: 30px;"></div>
+        <p class="section-subtitle">
+            La solution à votre problème existe. Que vous soyez en Europe, en Afrique ou ailleurs, le Maître Houdabi Dagbegnon peut vous aider à distance. Contactez-le pour une étude confidentielle de votre situation.
+        </p>
+        <a href="https://wa.me/22898761895" class="btn btn-wa" target="_blank">WhatsApp : +228 98 76 18 95</a>
+        <a href="tel:+22898761895" class="btn">Appel : +228 98 76 18 95</a>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>© 2024 Cabinet Spirituel Maître Houdabi Dagbegnon. Tous droits réservés.</p>
+        <p style="margin-top: 15px; font-size: 0.8em; color: #444;">Les services spirituels ne remplacent pas un avis médical, psychologique ou juridique.</p>
+        
+        <!-- BOUTON ADMIN DISCRET POUR LE MAÎTRE -->
+        <a href="/admin/" class="btn-admin">🔐 Espace Admin</a>
+    </footer>
+
+    <!-- CHATBOT HTML -->
+    <div class="chat-toggle" id="chatToggle" onclick="toggleChat()">💬</div>
+    
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Assistant Spirituel</span>
+            <span class="chat-close" onclick="toggleChat()">✖</span>
+        </div>
+        <div class="chat-body" id="chatBody"></div>
+        <div class="chat-footer">
+            <div class="chat-options-container" id="chatOptions"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Écrivez votre message ici..." onkeypress="handleKeyPress(event)">
+                <button id="chatSendBtn" onclick="sendCustomText()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHATBOT JAVASCRIPT -->
+    <script>
+        const chatBody = document.getElementById('chatBody');
+        const chatOptions = document.getElementById('chatOptions');
+        const chatInput = document.getElementById('chatInput');
+        let userResponses = {};
+        let currentStep = 0;
+
+        function initChat() {
+            currentStep = 0;
+            userResponses = {};
+            chatBody.innerHTML = '';
+            chatOptions.innerHTML = '';
+            document.querySelector('.chat-input-container').style.display = 'flex';
+            botMessage("Bonjour 👋 Je suis l'assistant du Maître Houdabi Dagbegnon. Quel est votre problème principal aujourd'hui ? (Vous pouvez cliquer sur un bouton ou écrire votre propre réponse en bas).");
+            showOptions([
+                { text: "❤️ Amour / Couple", value: "Amour / Couple" },
+                { text: "💰 Argent / Travail", value: "Argent / Travail" },
+                { text: "🛡️ Protection / Malchance", value: "Protection / Malchance" },
+                { text: "✨ Autre problème", value: "Autre problème" }
+            ]);
+        }
+
+        function toggleChat() {
+            const chatBox = document.getElementById('chatBox');
+            const chatToggle = document.getElementById('chatToggle');
+            if (chatBox.style.display === 'flex') {
+                chatBox.style.display = 'none';
+                chatToggle.innerHTML = '💬';
+                chatToggle.style.animation = 'pulse 2s infinite';
+            } else {
+                chatBox.style.display = 'flex';
+                chatToggle.innerHTML = '✖';
+                chatToggle.style.animation = 'none';
+                if (currentStep === 0) initChat();
+            }
+        }
+
+        function botMessage(text) {
+            const div = document.createElement('div');
+            div.classList.add('chat-msg', 'bot-msg');
+            div.innerText = text;
+            chatBody.appendChild(div);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function userMessage(text) {
+            const div = document.createElement('div');
+            div.classList.add('chat-msg', 'user-msg');
+            div.innerText = text;
+            chatBody.appendChild(div);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        function showOptions(options) {
+            chatOptions.innerHTML = '';
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.classList.add('chat-option-btn');
+                btn.innerText = opt.text;
+                btn.onclick = () => handleUserChoice(opt.value);
+                chatOptions.appendChild(btn);
+            });
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendCustomText();
+            }
+        }
+
+        function sendCustomText() {
+            const text = chatInput.value.trim();
+            if (text !== "") {
+                handleUserChoice(text);
+                chatInput.value = "";
+            }
+        }
+
+        function handleUserChoice(value) {
+            userMessage(value);
+            chatOptions.innerHTML = ''; 
+            
+            currentStep++;
+
+            setTimeout(() => {
+                if (currentStep === 1) {
+                    userResponses.problem = value;
+                    botMessage("Je comprends. Vous traversez une épreuve liée à " + value + ". Depuis combien de temps cela dure-t-il ?");
+                    showOptions([
+                        { text: "Moins d'un mois", value: "Moins d'un mois" },
+                        { text: "Quelques mois", value: "Quelques mois" },
+                        { text: "Très longtemps", value: "Très longtemps" }
+                    ]);
+                } else if (currentStep === 2) {
+                    userResponses.duration = value;
+                    botMessage("Avez-vous déjà essayé de régler ce problème sans succès ?");
+                    showOptions([
+                        { text: "Oui, sans résultat", value: "Oui, sans résultat" },
+                        { text: "Non, c'est la première fois", value: "Non, c'est nouveau" }
+                    ]);
+                } else if (currentStep === 3) {
+                    userResponses.previous = value;
+                    botMessage("Ne vous inquiétez plus. Le Maître Houdabi Dagbegnon a le don pour résoudre ce type de blocage. Êtes-vous prêt(e) à agir dès maintenant pour changer votre vie ?");
+                    showOptions([
+                        { text: "Oui, absolument !", value: "Oui, absolument" },
+                        { text: "J'ai quelques doutes", value: "J'ai quelques doutes" }
+                    ]);
+                } else if (currentStep === 4) {
+                    userResponses.ready = value;
+                    botMessage("Parfait. Le Maître va analyser votre demande personnellement et vous répondra en toute discrétion. Cliquez sur le bouton ci-dessous pour lui envoyer votre requête maintenant.");
+                    
+                    let waMessage = `Bonjour Maître Houdabi Dagbegnon, je vous contacte via votre site. Mon problème : ${userResponses.problem}. Depuis : ${userResponses.duration}. Tentatives précédentes : ${userResponses.previous}. Prêt(e) à agir : ${userResponses.ready}. Merci de m'aider.`;
+                    let waLink = `https://wa.me/22898761895?text=${encodeURIComponent(waMessage)}`;
+                    
+                    chatOptions.innerHTML = '';
+                    const finalBtn = document.createElement('a');
+                    finalBtn.href = waLink;
+                    finalBtn.target = "_blank";
+                    finalBtn.classList.add('chat-option-btn');
+                    finalBtn.style.background = "#25D366";
+                    finalBtn.style.color = "#fff";
+                    finalBtn.style.borderColor = "#25D366";
+                    finalBtn.style.fontSize = "1em";
+                    finalBtn.style.padding = "12px 20px";
+                    finalBtn.innerHTML = "💬 Envoyer ma demande au Maître";
+                    chatOptions.appendChild(finalBtn);
+                    
+                    document.querySelector('.chat-input-container').style.display = 'none';
+                }
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }, 800);
+        }
+    </script>
+
+</body>
+</html>
